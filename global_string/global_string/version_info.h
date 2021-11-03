@@ -13,6 +13,7 @@
 //#define USING_STRING
 //#define USING_ARRAY
 //#define USING_STATIC
+#define USING_DOUBLE_CONST
 
 #ifdef USING_STRING
 // duplicate multiple string and initialize
@@ -23,6 +24,9 @@ const char kPackageTypeDebug[] = "debug_array";
 #elif defined(USING_STATIC)
 // duplicate pointer
 static const char* kPackageTypeDebug = "debug_pointer_static";
+#elif defined(USING_DOUBLE_CONST)
+// duplicate pointer
+const char* const kPackageTypeDebug = "debug_pointer_double_const";
 #else
 // best method
 extern const char* kPackageTypeDebug; // "debug_pointer_extern"

@@ -11,6 +11,7 @@
 #ifdef USING_STRING
 #elif defined(USING_ARRAY)
 #elif defined(USING_STATIC)
+#elif defined(USING_DOUBLE_CONST)
 #else
 const char* kPackageTypeDebug = "debug_pointer_extern";
 #endif
