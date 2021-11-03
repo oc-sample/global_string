@@ -5,7 +5,8 @@
 //  Created by 郑俊明 on 2021/10/30.
 //
 
-#include "version_info.h"
+//#include "version_info.h"
+#include <IDbg/version_info.h>
 
 void PrintByCar() {
     const char* who = "car";

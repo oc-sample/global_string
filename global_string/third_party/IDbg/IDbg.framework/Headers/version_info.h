@@ -10,7 +10,7 @@
 
 #include <string>
 
-#define USING_STRING
+//#define USING_STRING
 //#define USING_ARRAY
 //#define USING_STATIC
 

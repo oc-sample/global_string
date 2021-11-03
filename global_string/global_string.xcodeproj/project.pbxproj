@@ -19,8 +19,9 @@
 		4AD69E9C272E65C7004C952F /* car.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4AD69E99272E65C7004C952F /* car.cc */; };
 		4AD69E9D272E65C7004C952F /* hook_cpp_init.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4AD69E9A272E65C7004C952F /* hook_cpp_init.mm */; };
 		4AD69E9E272E65C7004C952F /* student.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4AD69E9B272E65C7004C952F /* student.cc */; };
-		4AD69EA5272E65D4004C952F /* version_info.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4AD69EA2272E65D4004C952F /* version_info.cc */; };
 		4AD69EA6272E65D4004C952F /* teacher.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4AD69EA4272E65D4004C952F /* teacher.cc */; };
+		4AD84C422732E5050082F3EE /* IDbg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD84C3D2732E4FC0082F3EE /* IDbg.framework */; };
+		4AD84C432732E5050082F3EE /* IDbg.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD84C3D2732E4FC0082F3EE /* IDbg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,20 @@
 			remoteInfo = global_string;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4AD84C442732E5050082F3EE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4AD84C432732E5050082F3EE /* IDbg.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4AD69E5E272E656A004C952F /* global_string.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = global_string.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +77,8 @@
 		4AD69E99272E65C7004C952F /* car.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = car.cc; sourceTree = "<group>"; };
 		4AD69E9A272E65C7004C952F /* hook_cpp_init.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = hook_cpp_init.mm; sourceTree = "<group>"; };
 		4AD69E9B272E65C7004C952F /* student.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = student.cc; sourceTree = "<group>"; };
-		4AD69EA2272E65D4004C952F /* version_info.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = version_info.cc; sourceTree = "<group>"; };
-		4AD69EA3272E65D4004C952F /* version_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version_info.h; sourceTree = "<group>"; };
 		4AD69EA4272E65D4004C952F /* teacher.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = teacher.cc; sourceTree = "<group>"; };
+		4AD84C3D2732E4FC0082F3EE /* IDbg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDbg.framework; path = third_party/IDbg/IDbg.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD84C422732E5050082F3EE /* IDbg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +114,7 @@
 				4AD69E7C272E6571004C952F /* global_stringTests */,
 				4AD69E87272E6571004C952F /* global_stringUITests */,
 				4AD69E5F272E656A004C952F /* Products */,
+				4AD84C3C2732E4FC0082F3EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,8 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				4AD69EA4272E65D4004C952F /* teacher.cc */,
-				4AD69EA2272E65D4004C952F /* version_info.cc */,
-				4AD69EA3272E65D4004C952F /* version_info.h */,
 				4AD69E99272E65C7004C952F /* car.cc */,
 				4AD69E9A272E65C7004C952F /* hook_cpp_init.mm */,
 				4AD69E9B272E65C7004C952F /* student.cc */,
@@ -154,6 +168,14 @@
 			path = global_stringUITests;
 			sourceTree = "<group>";
 		};
+		4AD84C3C2732E4FC0082F3EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AD84C3D2732E4FC0082F3EE /* IDbg.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +186,7 @@
 				4AD69E5A272E656A004C952F /* Sources */,
 				4AD69E5B272E656A004C952F /* Frameworks */,
 				4AD69E5C272E656A004C952F /* Resources */,
+				4AD84C442732E5050082F3EE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,7 +311,6 @@
 				4AD69E69272E656A004C952F /* ViewController.mm in Sources */,
 				4AD69E63272E656A004C952F /* AppDelegate.m in Sources */,
 				4AD69EA6272E65D4004C952F /* teacher.cc in Sources */,
-				4AD69EA5272E65D4004C952F /* version_info.cc in Sources */,
 				4AD69E9E272E65C7004C952F /* student.cc in Sources */,
 				4AD69E74272E6570004C952F /* main.m in Sources */,
 				4AD69E66272E656A004C952F /* SceneDelegate.m in Sources */,
@@ -465,6 +487,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C948DA9P6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third_party/IDbg",
+				);
 				INFOPLIST_FILE = global_string/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,6 +499,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mj.global-string";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -483,6 +510,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C948DA9P6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third_party/IDbg",
+				);
 				INFOPLIST_FILE = global_string/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,6 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mj.global-string";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
