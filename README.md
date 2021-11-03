@@ -1,12 +1,14 @@
 # global_string
+## 解决问题
+定义一个公共常量字符串供其它文件使用的几种方法对比
 
-
-​
-假定使用场景：需要在头文件定义一个公共常量字符串，供其它文件使用
-
- 
-
-方式1-使用std::string
+## 方式1-std::string
+### 错误语法：
+std::string kPackageTypeDebug = "debug_string";
+错误提示：duplicate symbol
+### 正确语法：
+const std::string kPackageTypeDebug = "debug_string";
+static const std::string kPackageTypeDebug = "debug_string";
 
 例子：const std::string kPackageTypeDebug = "debug_string";
 
